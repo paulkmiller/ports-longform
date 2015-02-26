@@ -1,0 +1,231 @@
+/*
+Contents:
+
+1. Nav
+2. General Layout
+3. Section-specific
+4. Buttons
+5. Media Queries
+
+*/
+
+html, body {
+    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+}
+
+h2 {
+    font-family: 'league-gothic', 'proxima-nova', 'montserrat', 'helvetica', 'arial', sans-serif;
+}
+
+/*   Nav  */
+a.about { 
+    font-size:11px;
+    margin-left: 4.5%;
+}
+
+.about{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 4%;
+    margin-top: 4%;
+}
+
+nav {
+    height:115px;
+    position:fixed;
+    top:0;
+    width:100%;
+    background: white;
+    z-index: 99999;
+    border-bottom:1px solid rgb(153, 153, 153);
+}
+
+nav img {
+    height: 45px;
+    /*    max-width:25%;*/
+    /*    height:auto;*/
+    margin-top:35px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li.dropdown {
+    position: absolute;
+    margin-right:5%;
+    top:42px;
+    right:0;
+    color:red;
+    font-size:18px;
+}
+
+nav ul li.dropdown .caret {
+    margin-left:10px;
+}
+
+/*   General layout  */
+
+.chart {
+    min-height:660px;
+}
+
+section {
+    position: relative;
+    top: 115px;
+    display: block;
+}
+
+.anchor {
+    position: relative;
+    top: -5px;
+    display: block;
+}
+
+section, section .sidebar, section .viz {
+    min-height:90vh;
+    list-style-type: none;
+}
+
+section .sidebar, section .viz {
+    padding:30px;
+}
+
+section .sidebar {
+    background:#25aae1;
+    list-style-type: none !important;
+    width: 33%;
+    float:left;
+    font-family: 'Merriweather','proxima-nova', 'montserrat', 'helvetica', 'arial', sans-serif;
+    border-right: 3px solid #0076ab;
+}
+
+.panel, .panel-heading {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.panel-heading{
+    color:white !important;
+}
+
+.panel {
+    border: none !important;
+}
+
+section .viz {
+    display:inline-block;
+    float:right;
+    width:67%;
+}
+
+/* Section-specific */
+section.intro{
+    padding:25px;
+    text-align: center;
+}
+
+section.intro h1, section.intro .sources {
+    font-family: 'league-gothic', 'proxima-nova', 'montserrat', 'helvetica', 'arial', sans-serif;
+}
+section.intro h1 {
+    font-size: 72px;
+}
+
+section.intro .sources {
+    font-size: 36px;
+}
+
+section.intro p {
+    padding:15px 20%;
+    font-size:18px;
+}
+
+/*  Buttons  */
+
+.btn-default {
+    border:none;
+}
+
+.next-button, .previous-button {
+    width:25%;
+    height:80px;
+    background:transparent;
+    background:#156687;
+    border:none;
+    color:#156687;
+    color:#25aae1;
+    text-transform: uppercase;
+    font-family: 'proxima-nova', 'montserrat', 'helvetica', 'arial', sans-serif;
+    margin-top:30px;
+    border-radius:5px;
+    line-height: 20px;
+}
+
+.next-button.half, .previous-button.half{
+    width:48%;
+    font-size:12px;
+    letter-spacing: 0.1ex;
+}
+.next-button.half{
+    float:left;
+}
+.previous-button.half{
+    float:right;
+}
+
+.next-button:hover, .previous-button:hover {
+    background: transparent;
+    background: #156687;
+    color:white;
+}
+
+.next-button::after, .previous-button::before { 
+    color: white;
+    color: #25aae1;
+    display:block;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    font-size:20px;
+    font-weight: bold;
+}
+
+.next-button::after {
+
+}
+
+.previous-button::before {
+    content: "<";
+}
+
+
+/*   Media Queries */
+@media (max-width:1280px) {
+    section .sidebar {
+        width: 28%;
+    }
+
+    section .viz {
+        width:72%;
+    }
+}
+
+
+@media (max-width:786px) {
+/*section .sidebar {
+    width: 100%;
+    min-height:25vh;
+    }*/
+
+    section .viz {
+        width:100%;
+        min-height:75vh;
+    }
+    
+    .chart {
+        min-height:50%;
+    }
+
+}

@@ -1,0 +1,245 @@
+/*
+Contents:
+
+1. Nav
+2. General Layout
+3. Section-specific
+4. Buttons
+5. Media Queries
+
+*/
+
+html, body {
+    font-family: 'proxima-nova','Helvetica', 'Arial', sans-serif;
+}
+
+p {
+     font-family:, 'proxima-nova','Helvetica', 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+     font-family:'proxima-nova','Helvetica', 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 48px; 
+}
+/*   Nav  */
+nav {
+    height:90px;
+    position:fixed;
+    top:0;
+    width:100%;
+    background: white;
+    z-index: 99999;
+    border-bottom:1px solid rgb(153, 153, 153);
+}
+
+nav img {
+    height: 45px;
+/*    max-width:25%;*/
+/*    height:auto;*/
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li.dropdown {
+    position: absolute;
+    top:30px;
+    right:0;
+    width:200px;
+    color:#777;
+    font-size:18px;
+}
+
+nav ul li.dropdown .caret {
+    margin-left:10px;
+}
+
+/*   General layout  */
+
+.chart {
+    min-height:90vh;
+    height:90vh;
+}
+
+section {
+    position: relative;
+    top: 85px;
+    display: block;
+}
+
+.anchor {
+    position: relative;
+    top: -5px;
+    display: block;
+}
+
+section, section .sidebar, section .viz {
+    min-height:90vh;
+    height:90vh;
+}
+
+section .sidebar, .viz {
+    padding:30px;
+}
+
+section .sidebar {
+    background:#25aae1;
+    width: 33%;
+    float:left;
+    color:white;
+/*    margin-top: -30px;*/
+}
+
+.viz{
+/*    margin-top: -30px;*/
+}
+
+.sidebar h2 {
+/*    text-align: center;*/
+border-bottom:1px solid rgba(255,255,255,.6);
+}
+
+section .viz {
+    display:inline-block;
+    float:right;
+    width:67%;
+/*    margin-top: -30px;*/
+}
+
+.highcharts-container {
+    margin-top: 15px;
+}
+
+/* Section-specific */
+section.intro{
+    padding:25px;
+}
+section.intro h1, section.intro p {
+    max-width:80%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+section.intro p {
+    font-size:18px;
+}
+
+.sources {
+    background: #25aae1;
+    color:white;
+    padding:1rem 20% ;
+}
+
+.sources p {
+    font-family: 'proxima-nova', 'helvetica', 'arial', sans-serif;
+    font-size:22px;
+}
+
+.sources-logos {
+display: inline-block;
+width: 150px;
+margin-right: 20px;
+}
+
+/*  Buttons  */
+
+section .btn-default {
+margin-top: 30px;
+}
+
+.btn-default {
+    border:none;
+}
+
+.next-button, .previous-button {
+    width:40%;
+    height:50px;
+    background-color: #156687;
+    border:none;
+    border-radius:5px;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+}
+
+.next-button {
+    float: right;
+    margin-right: 10px;
+}
+
+.previous-button {
+    float: left;
+    margin-left: 10px;
+}
+
+.next-button:hover, .previous-button:hover {
+    background: #156687;
+    color:white;
+}
+
+.next-button:focus, .previous-button:focus {
+    background: #156687;
+    color: white;
+}
+
+.next-button::after, .previous-button::before { 
+    color: white;
+    display:block;
+     -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    font-size:20px;
+}
+
+.sidebartop {
+    width: 100% !important;
+}
+
+.sidebarbottom {
+    width: 100% !important;
+}
+
+/*.next-button::after {
+        content: ">";
+}*/
+
+/*.previous-button::before {
+        content: "<";
+}*/
+
+/*   Media Queries */
+@media (max-width:1280px) {
+section .sidebar {
+    width: 28%;
+}
+
+section .viz {
+    width:72%;
+}
+}
+
+@media (max-width:786px) {
+section .sidebar {
+    width: 100%;
+    min-height:35vh;
+    height:auto;
+}
+
+section .viz {
+    width:100%;
+    min-height:75vh;
+    height:auto;
+}
+    
+    .chart {
+    min-height:50%;
+    height:50%;
+}
+
+}

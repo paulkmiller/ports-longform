@@ -1,0 +1,80 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.glyphicon {
+    background:#777;
+    padding:7px;
+    border-radius:50px;
+    color:#f8f8f8;
+    margin-left:30px;
+    margin-right: 7px;
+}
+
+.glyphicon:first-child {
+    margin-left:0;
+}
+
+.navbar-nav{
+  float: right;
+}
+
+.navbar-brand img {
+    width:30px;
+    height:30px;
+    position:relative;
+    top:-5px;
+}
+.page-header{
+    margin-top:100px;
+    border: none;
+}
+.page-header h1 {
+    text-align: center;
+    line-height: 46px;
+}
+
+.instructions {
+    background:#f8f8f8;
+    font-size:18px;
+}
+
+.visualization div {
+    margin:30px 10%;
+}
+footer {
+    margin-top:50px;
+}
+
+.instructions p, footer p {
+    max-width:1170px;
+    margin:0 auto;
+    padding:30px;
+    text-align: center;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.overlay{
+    background-color:#fff;
+}
+
+.fa-fw a:hover{
+  text-decoration: none !important;
+}
+
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font-size:12px; 
+  font-family:sans-serif;
+}
+@media screen and (max-width:970px) {
+} 

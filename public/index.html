@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Transit Labs: Ports Dispute</title>
+
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+      </head>
+
+      <body>
+        <nav>
+          <ul class="sidebar-nav" id="sidebar-nav">
+            <li class="sidebar-brand">
+              <a href="index.html"><img src="images/tl-logo.png" class="tl-logo" /></a>
+            </li>
+            
+            <li class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                Select visual
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#section1">Over 25% of Trade</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#section2">Largest Container Ships</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#section3">"Sitting Waiting"</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#section4">$1.6 Billion Lost</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://transitlabs.com" title="About Transit Labs" target="_blank">About Transit Labs</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+        <a id="section1" class="anchor"></a>
+        <section>
+          <div class="sidebar" >
+            <h2>Over 25% of Trade</h2>
+            <p>Over a quarter America’s container trade occurs at West Coast ports. These ships are primarily engaged in trade with Asia and carry electronics, apparel, automobile parts, furniture, scrap metals, and other manufactured goods.</p>
+            <button class="next-button btn-default sidebartop" onClick="location.href='#section2'">Next Visual</button>
+          </div>
+          <div class="inner cover chart" id="vehmilestraveled" style="">
+            <div class="viz" id="westports">
+            </div>
+          </div>
+        </section>    
+
+        <a id="section2" class="anchor"></a>
+        <section>
+          <div class="sidebar" >
+            <h2>Largest Container Ships</h2>
+            <p>However, West Coast ports receive larger ships than other regions of the country. The average container vessel calling in West Coast ports carries almost 1,000 more containers than those visiting the East Coast. Ships anchored off the West Coast right now are carrying far more cargo than the average cargo ship, and almost 3 times what cargo ships visiting the Gulf Coast and Caribbean are carrying.</p>
+            <button class="next-button btn btn-default" onClick="location.href='#section3'">Next</button>
+            <button class="previous-button btn-default" onClick="location.href='#section1'">Previous</button>
+          </div>
+          <div class="inner cover chart" id="avgfuelecon" style="">
+            <div class="viz" id="avgcontainers">
+            </div>
+          </div>
+        </section> 
+
+        <a id="section3" class="anchor"></a>    
+        <section>
+          <div class="sidebar" >
+            <h2>"Sitting Waiting"</h2>
+            <p>Fueled by business from these larger cargo ships, combined with growing Trans-Pacific trade, the value of goods flowing through West Coast ports has increased 85% over the last ten years, accounting for almost 30% of the national total.</p>
+            <button class="next-button btn-default" onClick="location.href='#section4'">Next</button>
+            <button class="previous-button btn-default" onClick="location.href='#section2'">Previous</button>
+          </div>
+          <div class="inner cover chart" id="htfbalancep" style="">
+            <div class="viz" id="changeinvalue">
+            </div>
+          </div>
+        </section>
+
+        <a id="section4" class="anchor"></a>
+        <section>
+          <div class="sidebar" >
+            <h2>$1.6 Billion Lost</h2>
+            <p>What does all this mean? In dollars, almost 35% of our nation’s trade -- $1.6 billion flows through West Coast ports every single day. That’s the cost of the ports dispute.</p>
+            <button class="previous-button btn-default sidebarbottom" onClick="location.href='#section3'">Previous Visual</button>
+          </div>
+          <div class="inner cover chart" id="htfbalancey" style="">
+            <div class="viz" id="dailytradevalue">
+            </div>
+          </div>
+        </section> 
+
+
+
+        <!-- ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="/js/highcharts.js"></script>
+        <script src="//use.typekit.net/zao8smv.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+      </body>
+
+      </html>
